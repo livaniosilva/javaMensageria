@@ -24,6 +24,7 @@ public class Receiver {
 	            System.out.println(" [x] Received '" + message + "'");
 	    };
 	    channel.basicConsume(QUEUE_NAME, true, deliverCallBack, consumerTag -> { });
+	    
 	  }
 	
 
